@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmSphere Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">CalmSphere</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="content">
+        <h1>Because Your Mental Health Matters</h1>
+        <p><strong>CalmSphere</strong> is an AI-powered chatbot designed to provide a safe and supportive space for mental well-being. 
+           Whether you're feeling overwhelmed, anxious, or simply need a moment of clarity, CalmSphere is here to listen, guide, and offer helpful insights.
+        </p>
+        <p>Let <strong>CalmSphere</strong> be your trusted companion on the journey to a calmer, more peaceful mind ❤️</p>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot-widget">
+        <div class="chat-header">
+            CalmSphere Chatbot
+            <button class="close-btn" onclick="toggleChat()">✖</button>
+        </div>
+        <div class="chat-box" id="chatBox"></div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button type="button" id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <!-- Floating Button -->
+    <button class="chatbot-button" onclick="toggleChat()">💬</button>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

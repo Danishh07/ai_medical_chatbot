@@ -1,0 +1,15 @@
+#Core libraries
+langchain
+llama-index
+
+#For a backend server
+fastapi
+uvicorn
+
+#Additional tools
+requests
+python-dotenv
+
+#Optional AI agent frameworks
+autogpt
+babyagi

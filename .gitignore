@@ -1,0 +1,6 @@
+.env
+config.py
+venv/
+__pycache__/
+chat_log.xlsx
+stress_managemext.txt
