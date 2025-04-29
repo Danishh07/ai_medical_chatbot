@@ -4,4 +4,3 @@ venv/
 __pycache__/
 
 **/chat_log.csv
-**/stress_management.txt
