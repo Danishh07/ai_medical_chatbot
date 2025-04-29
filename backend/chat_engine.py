@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from llama_index.llms.huggingface import HuggingFaceInferenceAPI
+from llama_index.llms.huggingface_api import HuggingFaceInferenceAPI
 
 # Load environment variables
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '.env'))
