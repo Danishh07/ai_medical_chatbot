@@ -1,6 +1,6 @@
 # Core libraries
 langchain==0.1.14
-llama-index==0.10.20
+llama-index==0.9.48
 
 # Backend server
 fastapi==0.110.0
