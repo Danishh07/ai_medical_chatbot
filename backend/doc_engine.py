@@ -14,7 +14,7 @@ if not HF_API_KEY:
     raise ValueError("Hugging Face API key not found. Please add it to your .env file")
 
 # Load documents from /data folder
-documents = SimpleDirectoryReader("data").load_data()
+documents = SimpleDirectoryReader("backend/data").load_data()
 
 # Use Hugging Face Inference API instead of HuggingFaceLLM
 llm = HuggingFaceInferenceAPI(

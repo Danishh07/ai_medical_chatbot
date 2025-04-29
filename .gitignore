@@ -2,5 +2,6 @@
 config.py
 venv/
 __pycache__/
-chat_log.xlsx
-stress_managemext.txt
+
+**/chat_log.csv
+**/stress_management.txt

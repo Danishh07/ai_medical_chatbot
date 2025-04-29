@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from llama_index.llms.huggingface import HuggingFaceInferenceAPI
 
 # Load environment variables
-load_dotenv()
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '.env'))
 
 HF_API_KEY = os.getenv("API_KEY")
 if not HF_API_KEY:

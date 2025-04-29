@@ -1,11 +1,13 @@
 import os
 from fastapi import FastAPI
 from dotenv import load_dotenv
-from models import ChatRequest
-from chat_engine import chat_with_ai  # Updated function name
-from crisis import contains_crisis_keywords, SAFETY_MESSAGE
-from logger import log_chat
-from doc_engine import query_documents
+from backend.models import ChatRequest
+from backend.chat_engine import chat_with_ai
+## from models import ChatRequest
+## from chat_engine import chat_with_ai  
+from backend.crisis import contains_crisis_keywords, SAFETY_MESSAGE
+from backend.logger import log_chat
+from backend.doc_engine import query_documents
 from fastapi.middleware.cors import CORSMiddleware
 
 # Load environment variables
