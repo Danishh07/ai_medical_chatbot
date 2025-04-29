@@ -1,15 +1,15 @@
-#Core libraries
-langchain
-llama-index
+# Core libraries
+langchain==0.1.14
+llama-index==0.10.20
 
-#For a backend server
-fastapi
-uvicorn
+# Backend server
+fastapi==0.110.0
+uvicorn==0.29.0
 
-#Additional tools
+# Additional tools
 requests
 python-dotenv
 
-#Optional AI agent frameworks
-autogpt
-babyagi
+# Optional AI agent frameworks (commented out unless needed — these may cause huge dependency issues)
+# autogpt
+# babyagi
