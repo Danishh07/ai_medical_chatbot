@@ -13,10 +13,17 @@ HF_API_KEY = os.getenv("API_KEY")
 if not HF_API_KEY:
     raise ValueError("Hugging Face API key not found. Please add it to your .env file")
 
-# Load documents from /data folder
-documents = SimpleDirectoryReader("backend/data").load_data()
+# Construct absolute path to data folder
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
 
-# Use Hugging Face Inference API instead of HuggingFaceLLM
+if not os.path.exists(DATA_DIR):
+    raise FileNotFoundError(f"Required data directory not found: {DATA_DIR}")
+
+# Load documents from the data folder
+documents = SimpleDirectoryReader(DATA_DIR).load_data()
+
+# Set up Hugging Face Inference API
 llm = HuggingFaceInferenceAPI(
     model_name="HuggingFaceH4/zephyr-7b-beta",
     token=HF_API_KEY,
