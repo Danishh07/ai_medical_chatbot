@@ -2,9 +2,7 @@ import os
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from models import ChatRequest
-from chat_engine import chat_with_ai
-## from models import ChatRequest
-## from chat_engine import chat_with_ai  
+from chat_engine import chat_with_ai 
 from crisis import contains_crisis_keywords, SAFETY_MESSAGE
 from logger import log_chat
 from doc_engine import query_documents
