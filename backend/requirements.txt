@@ -1,10 +1,12 @@
 # Core libraries
 langchain==0.1.14
 llama-index==0.9.48
+huggingface_hub[inference]>=0.19.0
 
 # Backend server
 fastapi==0.110.0
 uvicorn==0.29.0
+
 
 # Additional tools
 requests
