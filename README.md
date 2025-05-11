@@ -5,7 +5,9 @@ Your AI-powered mental health companion
 ## 🌟 About the Project
 CalmSphere is an AI-powered chatbot designed to provide a safe and supportive space for mental well-being.
 Whether you're feeling overwhelmed, anxious, or simply need a moment of clarity, CalmSphere is here to listen, guide, and offer helpful insights.
+
 ## 📂 Project Structure
+```bash
 ai-medical-chatbot/
 ├── backend/
 │   ├── main.py              # FastAPI backend
@@ -18,6 +20,7 @@ ai-medical-chatbot/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
 
 ## 🚀 How to Run Locally
 1.) Clone the repository ~
